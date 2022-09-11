@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  z-index: 1000;
+  font-family: sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#top-content h1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: solid 2px black;
+  text-align: center;
+}
+
+#dealer-content {
+  display: flex;
+  height: 150px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#dealer-content > * {
+  margin: 10px;
+}
+
+#dealer-content > div {
+  display: flex;
+  margin-right: 30px;
+}
+
+#dealer-content > div img {
+  transform: scaleX(0.75);
+  margin-left: 30px;
+}
+
+#dealer-content h1 {
+  margin-bottom: 5px;
+}
+
+#dealer-content p span {
+  color: blue;
+  font-weight: 600;
+}
+
+#dealer-content img {
+  width: auto;
+  height: 100px;
+}
+
+
+
+#player-content {
+  display: flex;
+  height: 150px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#player-content > * {
+  margin: 10px;
+}
+
+#player-content > div {
+  display: flex;
+  margin-right: 30px;
+}
+
+#player-content > div .arrow {
+  transform: scaleX(0.75);
+  margin-left: 30px;
+}
+
+#player-content > div img {
+  margin: 10px;
+}
+
+#player-content h1 {
+  margin-bottom: 5px;
+}
+
+#player-content p span {
+  color: blue;
+  font-weight: 600;
+}
+
+#player-content img {
+  width: auto;
+  height: 100px;
+}
+
+
+
+#player-actions-1 {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#player-actions-1 p {
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+#player-actions-1 p span {
+  color: rgb(50, 220, 0);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#player-actions-1 input {
+  padding: 10px;
+  background: rgb(220, 220, 220);
+  border-radius: 5px 0 0 5px;
+  margin-left: 10px;
+}
+
+#bet-button {
+  margin-right: 10px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: all 100ms ease-in-out;
+  border-radius: 0 5px 5px 0;
+}
+
+#player-actions-1 button {
+  margin-right: 10px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  transition: all 100ms ease-in-out;
+}
+
+#player-actions-1 button:hover {
+  cursor: pointer;
+  color: blue;
+  transform: scale(1.05);
+}
+
+
+#message-box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#message-box {
+  display: none;
+  min-width: 500px;
+  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgb(240, 240, 220);
+  border-radius: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+
+#player-actions-2 {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#player-actions-2 button {
+  margin-right: 10px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  transition: all 100ms ease-in-out;
+}
+
+#player-actions-2 button:hover {
+  cursor: pointer;
+  color: blue;
+  transform: scale(1.05);
+}

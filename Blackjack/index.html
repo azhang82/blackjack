@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>BlackJack</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</head>
+
+<body>
+  <div id="top-content">
+    <h1>Let's play Blackjack!</h1>
+  </div>
+  <div id="dealer-content">
+    <div>
+      <div>
+        <h1>Dealer's<br>Hand</h1>
+        <p>Value: <span id="dealer-value">--</span></p>
+      </div>
+      <img class="arrow" src="http://cdn.onlinewebfonts.com/svg/img_98761.png">
+    </div>
+  </div>
+  <div id="player-content">
+    <div>
+      <div>
+        <h1>Your<br>Hand</h1>
+        <p>Value: <span id="player-value">--</span></p>
+      </div>
+      <img class="arrow" src="http://cdn.onlinewebfonts.com/svg/img_98761.png">
+    </div>
+  </div>
+  <div id="message-box-container">
+    <p id="message-box">Type system messages here</p>
+  </div>
+  <div id="player-actions-1">
+    <p>Your Money: <span id="player-money">$100</span></p>
+    <input id="bet-input" type="text" placeholder="Enter amount to bet..."></input>
+    <button id="bet-button" onclick="SetBet()">Bet</button>
+    <button id="play-again-button" onclick="ResetBoard()">Play Again</button>
+  </div>
+  <div id="player-actions-2">
+    <button id="hit-button" onclick="PlayerHit(CardDeck, PlayerCards)">Hit</button>
+    <button id="stand-button" onclick="Stand()">Stand</button>
+    <button id="double-down-button" onclick="DoubleDown()">Double Down</button>
+  </div>
+</body>
+
+</html>
