@@ -1,3 +1,3 @@
 # Blackjack
 
-# Camp project I finally finished
+cool lil camp project I finally finished
